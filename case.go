@@ -22,6 +22,7 @@ type Case struct {
 	TypeID               int          `json:"type_id"`
 	UpdatedBy            int          `json:"updated_by"`
 	UdpatedOn            int          `json:"updated_on"`
+	SyncID               string       `json:"custom_sync_id"`
 }
 
 // CustomStep represents the custom steps
@@ -67,6 +68,7 @@ type SendableCase struct {
 	Text            string       `json:"custom_text,omitempty"`
 	URL             string       `json:"custom_url,omitempty"`
 	User            int          `json:"custom_user,omitempty"`
+	SyncID          string       `json:"custom_sync_id,omitempty"`
 }
 
 // GetCase returns the existing Test Case caseID
